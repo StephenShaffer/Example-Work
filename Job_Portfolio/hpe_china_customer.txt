@@ -1,0 +1,328 @@
+﻿<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="x" uri="http://java.sun.com/jsp/jstl/xml" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ page contentType="text/html; charset=UTF-8"%>
+
+<!-- BEGIN: VARIABLE DECLARATIONS -->
+<fmt:setLocale value="en-US" />
+<x:parse var="d" doc="${data}"/>
+<!-- END: VARIABLE DECLARATIONS -->
+
+
+<html>
+
+<!-- BEGIN: HEAD -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+  <title></title>
+</head>
+<!-- END: HEAD -->
+
+
+<!-- BEGIN: BODY -->
+<body>
+
+<!-- BEGIN: LOGO & TITLE BLOCK-->
+<table cellspacing="0" cellpadding="0" width="628" border="0">
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td align="left"><img src="http://hpe.taylorportals.com/cds_scratch/images/hpe_logo.jpg" alt="HPE logo" width="150"/></td></tr>
+
+  <tr><td><font face="Arial" size="2">Hewlett Packard Enterprise (China) Co., Ltd (PS)</font></td></tr>
+  <tr><td><font face="Arial" size="2">Bldg 1, 3rd Floor, Lei Shing Hong Center, </font></td></tr>
+  <tr><td><font face="Arial" size="2">No.8 Guang Shun Ave. South,</font></td></tr>
+  <tr><td><font face="Arial" size="2">Chaoyang District, Beijing, China</font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+
+
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2">
+<%= nexstra.cds.servlet.TemplateTags.formatLongDate( pageContext , null, "mm/dd/yy" , "zh" , "cn" ) %>
+  </font></td></tr>
+
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2"><x:out select="$d//contact_name"/></font></td></tr>
+  <tr><td><font face="Arial" size="2"><x:out select="$d//entity_name"/></font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+</table>
+
+
+<table cellspacing="0" cellpadding="0" width="600" border="0">
+  <tr>
+    <td width="4%"><font face="Arial" size="2"></font></td>
+    <td width="96%"><font face="Arial" size="2">Re: HPE Software Spin-Merger with Micro Focus</font></td>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr>
+    <td width="4%"><font face="Arial" size="2"></font></td>
+    <td width="96%"><font face="Arial" size="2">关于：HPE软件分拆及与Micro Focus合并</font></td>
+  </tr>
+</table>
+
+<!-- END: LOGO & TITLE BLOCK-->
+
+
+<!-- BEGIN: LETTER -->
+<table cellspacing="0" cellpadding="0" width="628" border="0">
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2">Dear Customer: </font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2">尊敬的客户：</font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+
+  <tr><td><font face="Arial" size="2">
+On September 7, 2016, Hewlett Packard Enterprise Company (“<b>HPE</b>”) announced plans to spin-off and merge its HPE Software business unit (“<b>SW Business</b>”) with Micro Focus International plc (“<b>Micro Focus</b>”), a global software company dedicated to delivering and supporting enterprise software solutions (“<b>SW Spin-Merger</b>”). HPE’s decision will create two businesses that are stronger, more focused and better able to innovate and adapt in today’s market, delivering faster outcomes to our customers. The combination of the HPE SW Business with Micro Focus will create one of the world’s largest pure-play enterprise software companies.
+  </font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2">
+2016年9月7日，Hewlett Packard Enterprise Company (“<b>HPE</b>”) 公司宣布了剥离HPE软件业务部门（“软件业务”）并将其与Micro Focus International plc (“<b>Micro Focus</b>”)公司进行合并的计划（“<b>软件分拆及合并</b>”）。Micro Focus，是一家致力于交付和支持企业软件解决方案的国际化软件公司。HPE的决定将打造出两项更强大、更专注并更好地提供具有创新力和适应当今市场发展的业务，为客户提供更迅速的结果。HPE软件业务和Micro Focus的结合将打造出世界上最大的纯粹的企业软件公司之一。
+  </font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+
+  <tr><td><font face="Arial" size="2">
+The HPE SW Business has conducted a thorough evaluation of its global go-to-market strategy and market coverage to determine how best to serve its customers. As a result, the HPE SW Business is optimizing its go-to-market approach in select countries.
+  </font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2">
+HPE软件业务已对它的全球市场策略和市场覆盖进行了全面评估，以确定如何最好地服务客户。因此，在一些选定的国家，HPE软件业务将优化其进入市场的方式。
+  </font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+
+  <tr><td><font face="Arial" size="2">
+Until the SW Spin-Merger is complete, which is currently targeted for August 31, 2017, HPE, including our SW Business, will remain a single organization and continue to operate under our agreements with you and your affiliates. This letter contains confidential information about the SW Spin-Merger that we are sharing with you under the confidentiality provisions of our existing agreements with you.
+  </font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2">
+直到软件部门分拆及合并完成（目前计划于2017年8月31日完成），HPE，包括我们的软件业务，将继续保持在一个组织结构内并将继续根据我方与您或您的关联公司之间的协议运行。本信函包含关于软件分拆及合并的保密信息，我们根据我们与您之间现有协议的保密条款分享给您并受保密条款保护。
+  </font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+</table>
+
+<table cellspacing="0" cellpadding="0" width="600" border="0">
+  <tr><td><font face="Arial" size="2"><i><b>Your Agreements with HPE</b></i></font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2"><i><b>您与HPE的协议</b></i></font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+
+  <tr><td><font face="Arial" size="2">
+HPE is reorganizing its business internally in preparation for the SW Spin-Merger by separating its SW Business from HPE’s other business assets and liabilities (“<b>Remaining HPE Business</b>”) among HPE subsidiaries. We would like to notify you that all of your agreements with HPE (and its subsidiaries, including Hewlett Packard Enterprise (China) Co., Ltd, Shanghai Hewlett-Packard Co., Ltd, Hewlett-Packard HK SAR Limited, Hewlett-Packard AP (Hong Kong) Limited) and all associated agreements and documents (including, but not limited to, software license agreements, non-disclosure agreements, local service agreements, data transfer agreements, equipment loan agreements, data protection agreements, and transaction documents) (the “<b>Agreements</b>”) will be separated or duplicated, and allocated among HPE subsidiaries as follows effective as of June 1,2017 (the “<b>Effective Date</b>”). 
+  </font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2">
+HPE 正在进行机构内部业务重组，以为软件分拆及合并作准备。具体措施为在HPE分支机构中将软件业务从HPE其他业务资产和债务（“<b>剩余HPE业务</b>”）中分离出来。我们希望通知您，所有您与HPE（及其分支机构，包括慧与（中国）有限公司、上海慧与有限公司、Hewlett-Packard HK SAR Limited, Hewlett-Packard AP (Hong Kong) Limited）的协议和所有相关协议和文件（包括但不限于软件许可协议、保密协议、本地服务合同、数据转移协议、设备贷款协议，数据保护协议、以及交易文件）（“<b>协议</b>”）将被分开或复制，并根据以下安排在HPE分支机构中进行分配并于2017年6月1日生效（“<b>生效日</b>”）。
+  </font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+</table>
+
+<table cellspacing="0" cellpadding="0" width="600" border="0">
+  <tr>
+    <td width="4%"><font face="Arial" size="2"></font></td>
+    <td style="width: 4%; vertical-align:top"><font face="Arial" size="2">1)</font></td>
+    <td width="92%"><font face="Arial" size="2">
+Your Agreements with Hewlett Packard Enterprise (China) Co., Ltd, Shanghai Hewlett-Packard Co., Ltd (and all rights, duties and obligations under them) that relate exclusively to the HPE SW Business will be allocated to Shanghai Entco Software Technology Co., Ltd., which is anticipated to merge with Micro Focus (and its subsidiaries) following completion of the SW Spin-Merger.
+    </font></td>
+  </tr>
+
+  <tr>
+    <td><font face="Arial" size="2">&nbsp;</font></td>
+    <td><font face="Arial" size="2">&nbsp;</font></td>
+    <td><font face="Arial" size="2">&nbsp;</font></td>
+  </tr>
+
+  <tr>
+    <td width="4%"><font face="Arial" size="2"></font></td>
+    <td style="width: 4%; vertical-align:top"><font face="Arial" size="2">&nbsp;</font></td>
+    <td width="92%"><font face="Arial" size="2">
+您的仅与HPE软件业务相关的与慧与（中国）有限公司、上海慧与有限公司签订的协议（以及项下所有权利、责任和义务）将被分配到上海安题可软件科技有限公司，该公司将预计在软件分拆及合并完成后与Micro Focus（及其分支机构）进行合并。
+    </font></td>
+  </tr>
+
+  <tr>
+    <td><font face="Arial" size="2">&nbsp;</font></td>
+    <td><font face="Arial" size="2">&nbsp;</font></td>
+    <td><font face="Arial" size="2">&nbsp;</font></td>
+  </tr>
+  <tr>
+    <td width="4%"><font face="Arial" size="2"></font></td>
+    <td style="width: 4%; vertical-align:top"><font face="Arial" size="2">2)</font></td>
+    <td width="92%"><font face="Arial" size="2">
+Your Agreements with Hewlett Packard Enterprise (China) Co., Ltd, Shanghai Hewlett-Packard Co., Ltd (and all rights, duties and obligations under them) that relate exclusively to the Remaining HPE Business will remain with HPE, which in P.R. China will be allocated to Hewlett Packard Enterprise (China) Co., Ltd or Shanghai Hewlett-Packard Co., Ltd.
+    </font></td>
+  </tr>
+
+  <tr>
+    <td><font face="Arial" size="2">&nbsp;</font></td>
+    <td><font face="Arial" size="2">&nbsp;</font></td>
+    <td><font face="Arial" size="2">&nbsp;</font></td>
+  </tr>
+
+  <tr>
+    <td width="4%"><font face="Arial" size="2"></font></td>
+    <td style="width: 4%; vertical-align:top"><font face="Arial" size="2">&nbsp;</font></td>
+    <td width="92%"><font face="Arial" size="2">
+您的仅与剩余HPE业务相关的与慧与（中国）有限公司、上海慧与有限公司签订的协议（以及项下所有权利、责任和义务）将被保留在HPE，在中国地区将被分配给慧与（中国）有限公司或上海慧与有限公司。
+    </font></td>
+  </tr>
+
+  <tr>
+    <td><font face="Arial" size="2">&nbsp;</font></td>
+    <td><font face="Arial" size="2">&nbsp;</font></td>
+    <td><font face="Arial" size="2">&nbsp;</font></td>
+  </tr>
+
+  <tr>
+    <td width="4%"><font face="Arial" size="2"></font></td>
+    <td style="width: 4%; vertical-align:top"><font face="Arial" size="2">3)</font></td>
+    <td width="92%"><font face="Arial" size="2">
+Your Agreements with Hewlett Packard Enterprise (China) Co., Ltd, Shanghai Hewlett-Packard Co., Ltd (and all rights, duties and obligations under them) that relate to both the HPE SW Business and the Remaining HPE Business will be divided, duplicated and assigned so that in effect, from the Effective Date, the rights and obligations referable to the HPE SW Business are under a separate agreement between you and Shanghai Entco Software Technology Co., Ltd., and the rights and obligations referable to the Remaining HPE Business are under a separate agreement between you and Hewlett Packard Enterprise (China) Co., Ltd or Shanghai Hewlett-Packard Co., Ltd, allowing you to transact business with each company for their respective offerings, without interruption.
+    </font></td>
+  </tr>
+
+  <tr>
+    <td><font face="Arial" size="2">&nbsp;</font></td>
+    <td><font face="Arial" size="2">&nbsp;</font></td>
+    <td><font face="Arial" size="2">&nbsp;</font></td>
+  </tr>
+
+  <tr>
+    <td width="4%"><font face="Arial" size="2"></font></td>
+    <td style="width: 4%; vertical-align:top"><font face="Arial" size="2">&nbsp;</font></td>
+    <td width="92%"><font face="Arial" size="2">
+您的与HPE软件业务和剩余HPE业务均相关的与慧与（中国）有限公司、上海慧与有限公司签订的协议（以及项下所有权利、责任和义务）将被分开、复制并分派，从生效日起，可归于HPE软件业务的权利义务将被分派给您与上海安题可软件科技有限公司的一个单独协议中，可归于剩余HPE业务的权利义务将被分派给您与慧与（中国）有限公司或上海慧与有限公司的一个单独协议中，以允许您在不受打扰的情形下与各公司从事业务。
+    </font></td>
+  </tr>
+
+  <tr>
+    <td width="4%"><font face="Arial" size="2"></font></td>
+    <td style="width: 4%; vertical-align:top"><font face="Arial" size="2">4)</font></td>
+    <td width="92%"><font face="Arial" size="2">
+Your Agreements Hewlett-Packard HK SAR Limited、Hewlett-Packard AP (Hong Kong) Limited (and all rights, duties and obligations under them) that relate exclusively to the HPE SW Business will be allocated to Entco Singapore (Sales) Pte. Ltd.    </font></td>
+  </tr>
+
+  <tr>
+    <td><font face="Arial" size="2">&nbsp;</font></td>
+    <td><font face="Arial" size="2">&nbsp;</font></td>
+    <td><font face="Arial" size="2">&nbsp;</font></td>
+  </tr>
+
+  <tr>
+    <td width="4%"><font face="Arial" size="2"></font></td>
+    <td style="width: 4%; vertical-align:top"><font face="Arial" size="2">&nbsp;</font></td>
+    <td width="92%"><font face="Arial" size="2">
+您的仅与HPE软件业务相关的与Hewlett-Packard HK SAR Limited、Hewlett-Packard AP (Hong Kong) Limited签订的协议（以及项下所有权利、责任和义务）将被分配到Entco Singapore (Sales) Pte. Ltd.
+    </font></td>
+  </tr>
+
+  <tr>
+    <td width="4%"><font face="Arial" size="2"></font></td>
+    <td style="width: 4%; vertical-align:top"><font face="Arial" size="2">5)</font></td>
+    <td width="92%"><font face="Arial" size="2">
+Your Agreements with Hewlett-Packard HK SAR Limited、Hewlett-Packard AP (Hong Kong) Limited (and all rights, duties and obligations under them) that relate exclusively to the Remaining HPE Business will remain with HPE.    </font></td>
+  </tr>
+
+  <tr>
+    <td><font face="Arial" size="2">&nbsp;</font></td>
+    <td><font face="Arial" size="2">&nbsp;</font></td>
+    <td><font face="Arial" size="2">&nbsp;</font></td>
+  </tr>
+
+  <tr>
+    <td width="4%"><font face="Arial" size="2"></font></td>
+    <td style="width: 4%; vertical-align:top"><font face="Arial" size="2">&nbsp;</font></td>
+    <td width="92%"><font face="Arial" size="2">
+您的仅与剩余HPE业务相关的与Hewlett-Packard HK SAR Limited、Hewlett-Packard AP (Hong Kong) Limited签订的协议（以及项下所有权利、责任和义务）将被保留在HPE。
+    </font></td>
+  </tr>
+
+  <tr>
+    <td width="4%"><font face="Arial" size="2"></font></td>
+    <td style="width: 4%; vertical-align:top"><font face="Arial" size="2">6)</font></td>
+    <td width="92%"><font face="Arial" size="2">
+Your Agreements with Hewlett-Packard HK SAR Limited、Hewlett-Packard AP (Hong Kong) Limited (and all rights, duties and obligations under them) that relate to both the HPE SW Business and the Remaining HPE Business will be divided, duplicated and assigned so that in effect, from the Effective Date, the rights and obligations referable to the HPE SW Business are under a separate agreement between you and Entco Singapore (Sales) Pte. Ltd., and the rights and obligations referable to the Remaining HPE Business are under a separate agreement between you and HPE, allowing you to transact business with each company for their respective offerings, without interruption.
+    </font></td>
+  </tr>
+
+  <tr>
+    <td><font face="Arial" size="2">&nbsp;</font></td>
+    <td><font face="Arial" size="2">&nbsp;</font></td>
+    <td><font face="Arial" size="2">&nbsp;</font></td>
+  </tr>
+
+  <tr>
+    <td width="4%"><font face="Arial" size="2"></font></td>
+    <td style="width: 4%; vertical-align:top"><font face="Arial" size="2">&nbsp;</font></td>
+    <td width="92%"><font face="Arial" size="2">
+您的与HPE软件业务和剩余HPE业务均相关的与Hewlett-Packard HK SAR Limited、Hewlett-Packard AP (Hong Kong) Limited签订的协议（以及项下所有权利、责任和义务）将被分开、复制并分派，从生效日起，可归于HPE软件业务的权利义务将被分派给您与Entco Singapore (Sales) Pte. Ltd.的一个单独协议中，可归于剩余HPE业务的权利义务将被分派给您与HPE的一个单独协议中，以允许您在不受打扰的情形下与各公司从事业务。
+    </font></td>
+  </tr>
+</table>
+
+
+<table cellspacing="0" cellpadding="0" width="628" border="0">
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2"><b><i>Additional Information</i></b></font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2"><b><i>其他信息</i></b></font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+
+  <tr><td><font face="Arial" size="2">
+All open orders with your current HPE contracting party will be transferred together with their related agreements on the Effective Date. We will communicate with you again soon with all required information for those open orders, as well as all other operational and logistical details, including legal entity names, addresses, and like information for HPE and the appropriate subsidiaries.
+  </font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2">
+所有与现有HPE签约方之间未完成的订单将与与它们相关的协议自生效日一并转移。我们将很快再次与您沟通关于这些未结订单的所有必要信息，及所有其他运营和物流细节，包括HPE及适用的分支机构的法律实体名称、地址和此类相关信息。
+  </font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+
+  <tr><td><font face="Arial" size="2">
+Upon completion of the SW Spin-Merger, Shanghai Entco Software Technology Co., Ltd. and Entco Singapore (Sales) Pte. Ltd. will merge with Micro Focus (and its subsidiaries).
+  </font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2">
+一旦软件分拆与合并完成，上海安题可软件科技有限公司和Entco Singapore (Sales) Pte. Ltd.将与Micro Focus（及其分支机构）进行合并。
+  </font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+
+  <tr><td><font face="Arial" size="2">
+Please communicate these changes throughout your organization, including affiliates, as appropriate. 
+  </font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2">
+请视情况而定在您的组织机构包括关联公司中沟通上述变化。
+  </font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+
+  <tr><td><font face="Arial" size="2">
+Thank you in advance for your prompt attention to this matter.
+  </font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2">
+感谢您对此事件的及时关注。
+  </font></td></tr>
+</table>
+<!-- END: ADDITIONAL INFORMATION -->
+
+
+<!-- SIGNATURE BLOCK AREA -->
+<table cellspacing="0" cellpadding="0" width="628" border="0">
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2">Sincerely,</font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2">此致</font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td align="left"><img src="http://cds3.nexstra.com/cds_scratch/images/hp_signatures/scott_c._billings_sig.png" width="250" /></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+ <tr><td><font face="Arial" size="2">Scott C. Billing</font></td></tr>
+  <tr><td><font face="Arial" size="2">Contract Separation Lead</font></td></tr>
+  <tr><td><font face="Arial" size="2">Separation Management Office</font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+</table>
+
+</body>
+<%=nexstra.cds.servlet.TemplateTags.getOpenEmailImage( request , pageContext ) %>
+</html>

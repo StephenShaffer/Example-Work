@@ -1,0 +1,448 @@
+﻿<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="x" uri="http://java.sun.com/jsp/jstl/xml" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ page contentType="text/html; charset=UTF-8"%>
+<% String tplname  = ((java.util.Properties)request.getAttribute("values")).getProperty("tplname"); 
+   int usidx = tplname.lastIndexOf("_") + 1;
+   String prefix = tplname.substring(0,usidx);
+%>
+<fmt:setLocale value="en-US" />
+<x:parse var="d" doc="${data}"/>
+<X:set var="end_date" select="string($d//notification_delivery_date)"/>
+<c:set var="EOL_date" value="02-sep-14"/>
+<c:set var="EOA_date" value="30-nov-14"/>
+<c:set var="EOS_date" value="30-nov-14"/>
+<c:set var="EOP_date" value="30-nov-14"/>
+<c:set var="EOSL_date" value="30-nov-14"/>
+<c:set var='tpl' value='<%= ((java.util.Properties)request.getAttribute("values")).getProperty("tplname") %>'/>
+<c:set var="tplprod" value="${fn:toLowerCase((fn:split(tpl,'_'))[0])}"/>
+<c:set var="tpltype" value="${fn:toLowerCase((fn:split(tpl,'_'))[1])}"/>
+<c:set var="tpllang" value="${fn:toLowerCase((fn:split(tpl,'_'))[2])}"/>
+
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+  <title>End-of-Availability and End-of-Support Announcement</title>
+</head>
+
+<body>
+
+
+<!-- BEGIN: HAVING TROUBLE READING - READ ONLINE VERSION -->
+<table cellspacing="0" cellpadding="0" width="628" border="0">
+  <tr>
+    <td><font face="Arial" size="2">Having trouble reading this email?</font></td>
+    <td align=right><a href='<%=nexstra.cds.servlet.TemplateTags.getTemplateURL( request , pageContext , tplname, (java.util.Properties)request.getAttribute("values") ) %>'><font face="Arial" size="2">Read the online version</a></font></td>
+  </tr>
+</table>
+<!-- END: HAVING TROUBLE READING - READ ONLINE VERSION -->
+
+
+<!-- BEGIN: LANGUAGE BAR -->
+<c:choose>
+  <c:when test="${(empty values.temp_DE || values.temp_DE== '0') && (empty values.temp_FR || values.temp_FR== '0') && (empty values.temp_PT || values.temp_PT== '0') && (empty values.temp_CH || values.temp_CH== '0') && (empty values.temp_IT || values.temp_IT== '0') && (empty values.temp_CS || values.temp_CS== '0') && (empty values.temp_KO || values.temp_KO== '0') && (empty values.temp_ES || values.temp_ES== '0') }">
+  </c:when>
+  <c:otherwise>
+    <table cellspacing="0" cellpadding="0" width="628" border="0">
+      <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+      <tr><td><font face="Arial" size="2">View this email in:</font></td><td></td></tr>
+    </table>
+    <table cellspacing="0" cellpadding="0" width="628" border="0">
+      <tr><td><font face="Arial" size="2"><a href='<%=nexstra.cds.servlet.TemplateTags.getTemplateURL( request , pageContext , prefix+"IN", (java.util.Properties)request.getAttribute("values")  ) %>'>English</a><c:if test="${not empty values.temp_DE && values.temp_DE== '1'}">
+	| <a href='<%=nexstra.cds.servlet.TemplateTags.getTemplateURL( request , pageContext , prefix+"GR", (java.util.Properties)request.getAttribute("values") ) %>'>Deutsch</a></c:if><c:if test="${not empty values.temp_ES and values.temp_ES eq '1'}">
+	| <a href='<%=nexstra.cds.servlet.TemplateTags.getTemplateURL( request , pageContext , prefix+"SL", (java.util.Properties)request.getAttribute("values") ) %>'>Español</a></c:if><c:if test="${not empty values.temp_FR && values.temp_FR== '1'}">
+	| <a href='<%=nexstra.cds.servlet.TemplateTags.getTemplateURL( request , pageContext , prefix+"FR", (java.util.Properties)request.getAttribute("values") ) %>'>Français</a></c:if><c:if test="${not empty values.temp_IT && values.temp_IT== '1'}">
+	| <a href='<%=nexstra.cds.servlet.TemplateTags.getTemplateURL( request , pageContext , prefix+"IT", (java.util.Properties)request.getAttribute("values") ) %>'>Italiano</a></c:if><c:if test="${not empty values.temp_PT && values.temp_PT== '1'}">
+	| <a href='<%=nexstra.cds.servlet.TemplateTags.getTemplateURL( request , pageContext , prefix+"BR", (java.util.Properties)request.getAttribute("values") ) %>'>Português</a></c:if><c:if test="${not empty values.temp_CH && values.temp_CH== '1'}">
+	| <a href='<%=nexstra.cds.servlet.TemplateTags.getTemplateURL( request , pageContext , prefix+"CH", (java.util.Properties)request.getAttribute("values") ) %>'>繁體中文</a></c:if><c:if test="${not empty values.temp_CS && values.temp_CS== '1'}">
+	| <a href='<%=nexstra.cds.servlet.TemplateTags.getTemplateURL( request , pageContext , prefix+"CS", (java.util.Properties)request.getAttribute("values") ) %>'>简体中文</a></c:if><c:if test="${not empty values.temp_KO && values.temp_KO== '1'}">
+	| <a href='<%=nexstra.cds.servlet.TemplateTags.getTemplateURL( request , pageContext , prefix+"KN", (java.util.Properties)request.getAttribute("values") ) %>'>한국어</a></c:if></font></td></tr>
+    </table>
+  </c:otherwise>
+</c:choose>
+<!-- END: LANGUAGE BAR -->
+
+
+<!-- BEGIN: SYMANTEC LOGO & TITLE BLOCK -->
+<table cellspacing="0" cellpadding="0" width="628" border="0">
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td align="center"><img src="http://cds3.nexstra.com/cds_scratch/images/symclogo.bmp" width="200pt"/></td></tr>
+  <tr><td align="center"><font face="Arial" size="4"><b>End-of-Availability/End-of-Support Notification</b></font></td></tr>
+  <tr><td align="center"><font face="Arial" size="2"><b>Symantec&trade; Email Continuity.cloud by Dell and <br> Symantec&trade; Email Archiving.cloud by Dell</b></font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+</table>
+<!-- END: SYMANTEC LOGO & TITLE BLOCK -->
+
+
+<!-- BEGIN: DATE -->
+<table cellspacing="0" cellpadding="0" width="628" border="0">
+  <tr><td><font face="Arial" size="2">
+  <tr><td><font face="Arial" size="2">
+<%= nexstra.cds.servlet.TemplateTags.formatLongDate( pageContext , null, "mm/dd/yy" , "en" , "" ) %>
+  </font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+</table>
+<!-- END: DATE -->
+
+
+<!-- BEGIN: BODY PARAGRAPHS -->
+<table cellspacing="0" cellpadding="0" width="628" border="0">
+  <tr><td><font face="Arial" size="2">Dear Symantec Customer,</font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2">
+First and foremost, we would like to thank you for your business. We have an important update to share regarding 
+Symantec Email Continuity.cloud by Dell and Symantec Email Archiving.cloud by Dell services.  
+These services by Dell are also known as Archive-D. Our records indicate you are subscribed to one or both of these services.
+  </font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2">
+After careful consideration and review, Symantec has decided to discontinue selling these services. 
+Specifically, Symantec will not renew or extend your current agreement with respect to these services. 
+You will have use of Symantec Email Continuity.cloud by Dell and Symantec Email Archiving.cloud by Dell until 
+end of service availability on February 1, 2016 or the end of your current service period, whichever is sooner. 
+  </font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2">
+If you made a prepayment for service for a provision period extending beyond the end of service date on 
+February 1, 2016, you will be eligible for a refund. If you meet this eligibility requirement, 
+please request the refund through your original point of purchase. eement with Proofpoint (or chosen vendor) 
+for the ongoing provision of your email archiving 
+services.
+  </font></td></tr>
+  <tr><td><font face="Arial" size="2">
+    <ul>
+      <li>If you purchased through a reseller or partner, please contact your reseller or partner for a refund</li>
+      <li>If you purchased directly from Symantec, Symantec will issue a refund directly to you. 
+        Please send an email that includes your order number to 
+        <a href="mailto:CLD_cancellations_MLABS@symantec.com">CLD_cancellations_MLABS@symantec.com</a>.</li>
+    </ul>
+  </font></td></tr>
+  <tr><td><font face="Arial" size="2">
+We are notifying you now in an effort to minimize the impact of this decision on your business operations. 
+To this end, the timing of service availability from Symantec along with seamless service continuation options 
+from Dell is designed to give you ample time to allow you to transition your services to Dell.
+  </font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2">
+For the avoidance of doubt, this notice of non-renewal is applicable ONLY to the Symantec Email Continuity.cloud 
+by Dell and Symantec Email Archiving.cloud by Dell services you ordered from Symantec. All other Symantec cloud 
+or hosted services purchased under your applicable Symantec services agreement remain in full force and effect.
+  </font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2">
+If you would like to retain the Symantec Email Continuity.cloud by Dell and Symantec Email Archiving.cloud 
+by Dell service(s) beyond the end date of your current service agreement with Symantec or February 1, 2016, 
+whichever is sooner, you will need to enter into a separate service agreement with Dell.    
+  </font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2">
+<b>Please make note of the following key dates:</b>
+  </font></td></tr>
+  <tr><td><font face="Arial" size="2">
+    <ul>
+      <li><b>February 2, 2015</b>: You will no longer be able to purchase a subscription (either new or renewal)</li>
+      <li><b>February 1, 2016</b>: You will no longer be able to access or use Email Continuity.cloud by 
+        Dell and Email Archiving.cloud by Dell, and Technical Support will no longer be available</li>
+    </ul>
+  </font></td></tr>
+  <tr><td><font face="Arial" size="2">
+<b>Please note</b>:  You will have use of Symantec Email Continuity.cloud by Dell and Email Archiving.cloud 
+by Dell services until end of service availability on February 1, 2016 or the end of your current service period, 
+whichever is sooner. It is important you reach out to Dell or Symantec as soon as possible if you wish to continue 
+service without disruption. Migrations from Dell to Symantec EV.cloud or other vendors may take multiple months. 
+Therefore, if you are interested in a migration, please reach out to Symantec or Dell for more information. 
+  </font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2">
+Our goal is to do everything we can to minimize any disruption to your business caused by this announcement. 
+Please see the attached FAQ and Helpful Contact Information sections for additional information. 
+  </font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+
+</table>
+<!-- END: BODY PARAGRAPHS -->
+
+
+<!-- BEGIN: HELPFUL CONTACT INFORMATION (non-standard) -->
+<table cellspacing="0" cellpadding="0" width="628" border="0">
+  <tr><td><font face="Arial" size="2"><b>Helpful Contact Information:</b></font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2"><b>Symantec Technical Support Team</b></font></td></tr>
+  <tr><td><font face="Arial" size="2"><a href="mailto:lof_losupport@symantec.com">lof_losupport@symantec.com</a>
+  </font></td></tr>
+  <tr><td><font face="Arial" size="2">US/Canada: +1 (866) 807 6047 or +1 (800) 251 3863</font></td></tr>
+  <tr><td><font face="Arial" size="2">EMEA: +44 (0) 870 850 3014</font></td></tr>
+  <tr><td><font face="Arial" size="2">APAC: +61 2 9086 8980</font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+
+  <tr><td><font face="Arial" size="2"><b>Dell Email Management Services Technical Support Team </b></font></td></tr>
+  <tr><td><font face="Arial" size="2"><a href="mailto:ems_support@dell.com">ems_support@dell.com</a>
+  </font></td></tr>
+  <tr><td><font face="Arial" size="2">US/Canada: +1 (877) 975 2599</font></td></tr>
+  <tr><td><font face="Arial" size="2">Other geographies: </font></td></tr>
+  <tr><td><font face="Arial" size="2"><a href="https://www.dellmodularservices.com/downloads/Customer_Support_Guide.pdf">https://www.dellmodularservices.com/downloads/Customer_Support_Guide.pdf</a></font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+
+  <tr><td><font face="Arial" size="2"><b>Dell Email Management Services Sales Team </b></font></td></tr>
+  <tr><td><font face="Arial" size="2"><a href="mailto:ems_support@dell.com">EMS_Sales_Support@dell.com</a>
+  </font></td></tr>
+  <tr><td><font face="Arial" size="2">US/Canada: +1 (888) 381 3201</font></td></tr>
+  <tr><td><font face="Arial" size="2">Other geographies: </font></td></tr>
+  <tr><td><font face="Arial" size="2"><a href="https://www.dellmodularservices.com/downloads/Customer_Support_Guide.pdf ">https://www.dellmodularservices.com/downloads/Customer_Support_Guide.pdf</a></font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+</table>
+<!-- END: HELPFUL CONTACT INFORMATION -->
+
+
+<!-- HORIZONTAL LINE -->
+<table cellspacing="0" cellpadding="0" width="628" border="0">
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2"><hr></font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+</table>
+
+
+<!-- BEGIN: FAQ TABLE -->
+<a id="FAQ"></a>
+<table cellspacing="0" cellpadding="0" width="628" border="0">
+  <tr>
+    <td><img src="http://cds3.nexstra.com/cds_scratch/images/DELLCLOUD_FAQ_Header_IN.png" alt="Symantec FAQ Header"></td>
+  </tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+  <tr><td><font face="Arial" size="2">
+This FAQ addresses commonly asked questions regarding Symantec’s decision to End of Life (EOL) 
+Symantec Email Continuity.cloud and Email Archiving.cloud by Dell.
+  </font></td></tr>
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+</table>
+
+
+<table border="1" cellspacing="0" cellpadding="3" width="628" border="1">
+<!-- FAQ #1 -->
+<tr>
+  <td><font face="Arial" size="2"><b>What is happening to Symantec Email Continuity.cloud and Email Archiving.cloud by Dell?</b></font></td>
+  <td><font face="Arial" size="2">
+On February 2, 2015, Symantec will cease selling Symantec Email Continuity.cloud by Dell and Email Archiving.cloud 
+by Dell. As a result, we are working with Dell to provide you with an easy migration. If you are an existing customer, 
+you may continue to use Symantec Email Continuity.cloud by Dell and Email Archiving.cloud by Dell until the end of service 
+availability on February 1, 2016, or the end of your current service agreement, whichever is sooner.<br>
+<br>
+After February 1, 2016, or the end of your current service agreement, whichever is sooner, you will no longer be able 
+to log in to Symantec Email Continuity.cloud by Dell and Email Archiving.cloud by Dell service and technical support 
+for these services will no longer be available. If you have transitioned to Dell before this date you will not be impacted.<br>
+<br>
+Please note that this announcement impacts only Email Continuity.cloud by Dell and Email Archiving.cloud by Dell. 
+Other Symantec archiving products, such as Symantec Email Security.cloud, Symantec Enterprise Vault Email Continuity.cloud, 
+Symantec Enterprise Vault. cloud and Enterprise Vault are NOT impacted. 
+</font></td>
+</tr>
+
+<!-- FAQ #2 -->
+<tr>
+  <td><font face="Arial" size="2"><b>Why was the decision made?</b></font></td>
+  <td><font face="Arial" size="2">
+Our goal is to delight customers with our product and services offerings. Taking this into consideration 
+and carefully evaluating the overall needs of our customer base, we will continue to focus efforts on our 
+archiving portfolio including Enterprise Vault and Enterprise Vault.cloud. 
+  </font></td>
+</tr>
+
+<!-- FAQ #3 -->
+<tr>
+  <td><font face="Arial" size="2"><b>What is Symantec's strategic plan for cloud archiving and other cloud products?</b></font></td>
+  <td><font face="Arial" size="2">
+Discontinuing Email Continuity.cloud by Dell and Email Archiving.cloud by Dell allows us sharpen our focus on 
+Enterprise Vault.cloud. Product roadmaps and resources will continue to be targeted toward market leading features and functionality.
+<br><br>
+Symantec will continue to invest in cloud offerings that enable our customers to scale and protect their information 
+as their needs grow. These offerings include Symantec Enterprise Vault.cloud, Symantec Enterprise Vault Email Continuity.cloud, 
+Symantec Email Security.cloud, and Symantec Endpoint Protection Small Business Edition 2013. 
+  </font></td>
+</tr>
+
+<!-- FAQ #4 -->
+<tr>
+  <td><font face="Arial" size="2"><b>What is the timeline for the EOS and EOA?</b></font></td>
+  <td><font face="Arial" size="2">
+    <ul>
+      <li><b>February 2, 2015: Subscription</b><br>
+       You will no longer be able to purchase a subscription 
+       (either new or renewal beyond the end date of your current service agreement).</li>
+      <li><b>February 1, 2016: Service and Technical Support</b><br>
+        You will no longer be able to access or use the Email Continuity.cloud & Email Archiving.cloud 
+        by Dell services and Technical Support will no longer be available, unless you have contracted directly with Dell.</li>
+    </ul>
+<br>  
+We want to do everything we can to minimize any disruption to your businesses.<br>
+<br>
+To this end, the timing of the Symantec Email Continuity.cloud by Dell and Email Archiving.cloud by 
+Dell service discontinuation is designed to allow you ample time to contract for these services directly with Dell, 
+or to another option of your choice. To retain these services beyond the end date of your current service agreement, 
+you must enter into a separate services contract with Dell.
+  </font></td>
+</tr>
+
+<!-- FAQ #5 -->
+<tr>
+  <td><font face="Arial" size="2"><b>How can I contact Symantec Technical Support?</b></font></td>
+  <td><font face="Arial" size="2">
+The Technical Support Team can be reached via email at: <a href="mailto:lof_losupport@symantec.com">lof_losupport@symantec.com</a><br>
+<br>
+The Technical Support Team can also be reached at the following geo-specific phone numbers:
+<br>
+<ul>
+  <li><b>US/Canada:</b> +1 800 251 3863</li>
+  <li><b>EMEA:</b> +44 (0) 870 850 3014</li>
+  <li><b>Asia Pacific:</b> +61 2 9086 8980</li>
+</ul>
+  </font></td>
+</tr>
+
+<!-- FAQ #6 -->
+<tr>
+  <td><font face="Arial" size="2"><b>I would like to select Dell as my vendor. Who should I contact for more information?</b></font></td>
+  <td><font face="Arial" size="2">
+Reach a dedicated Dell sales rep, <br>
+via email: <a href="mailto:EMS_Sales_Support@dell.com">mailto:EMS_Sales_Support@dell.com</a>
+<br>
+Reach a dedicated Dell sales rep, via phone:<br>
+North America: 888-381-3201 <br>
+Other geographies: <br>
+https://www.dellmodularsevices.com/downloads<br>
+/Customer_Support_Guide.pdf Option 4 <br>
+<br>
+Dell Account executives will work with you to provide more information and answer your questions. 
+Additionally, for more information, please visit: 
+<a href="http://software.dell.com/Retain_Dell_Email_Services">http://software.dell.com/Retain_Dell_Email_Services</a>
+  </font></td>
+</tr>
+
+<!-- FAQ #7 -->
+<tr>
+  <td><font face="Arial" size="2"><b>How do I get my data from the Email Archiving.cloud by Dell service 
+    if I do not choose to retain that service?</b></font></td>
+  <td><font face="Arial" size="2">
+<ul>
+  <li>Self-Service Export - Export your data and terminate your existing service. <br>
+If you wish to transition your existing data to another archiving service, such as Symantec Enterprise Vault.cloud, 
+you will need to begin the self-service export process in advance of your service termination date as all data must 
+be exported by that time. Data that is not exported at the service termination data will be deleted. If you need 
+information about conducting a self-service export, please contact Dell Technical Support.
+  </li>
+  <li>
+Assisted Export – Symantec/Dell will export your data for a per TB fee and deliver the data on secure media. Such extraction will need to be completed in advance of your service termination date as all data must be exported by that time. Symantec has procedures in place for data extraction out of the EmailArchive.cloud by Dell service. 
+  </li>    
+  <li>
+No export - Terminate your service without exporting data. You may simply elect to allow your service agreement to lapse without exporting data. In which case and at that time you will no longer be able to log into the web portal, and your archived email data will be deleted.
+</li>    
+  </font></td>
+</tr>
+
+<!-- FAQ #8 -->
+<tr>
+  <td><font face="Arial" size="2"><b>Will I receive any kind of refund?</b></font></td>
+  <td><font face="Arial" size="2">
+Yes, if you have made a prepayment for a service period extending beyond the End of Service Life date, 
+i.e. prepayment for service period extending beyond February 1, 2016. 
+  </font></td>
+</tr>
+
+<!-- FAQ #9 -->
+<tr>
+  <td><font face="Arial" size="2"><b>I'm eligible for a refund, how does the process work?</b></font></td>
+  <td><font face="Arial" size="2">
+You are eligible for a refund if your contract’s then current term goes beyond the service’s End of Service Life 
+on February 1, 2016. If you meet this eligibility requirement, please request the refund through your original point of purchase.
+<br>
+<ul>
+  <li>If you purchased through a reseller or partner, please contact your reseller or partner for a refund.</li>
+</ul>
+If you purchased directly from Symantec, Symantec will issue a refund directly to you. 
+Please send an email that includes your order number to 
+<a href="mailto:CLD_cancellations_MLABS@symantec.com">CLD_cancellations_MLABS@symantec.com</a>. 
+  </font></td>
+</tr>
+
+<!-- FAQ #10 -->
+<tr>
+  <td><font face="Arial" size="2"><b>What are my options to migrate to another Symantec archiving solution?</b></font></td>
+  <td><font face="Arial" size="2">
+Symantec's Enterprise Vault.cloud, an alternative to the Email Archiving.cloud by Dell offering, is a cloud-based 
+archiving service that helps organizations store, manage, and discover business-critical information. 
+Enterprise Vault.cloud securely captures information in a centralized and tamper-proof online repository, 
+with seamless end user access and rapid search functionality. Plus, the built-in collaborative eDiscovery 
+workflow provides legal teams with roles-based access, expediting the discovery process. With no mandatory 
+hardware or software required, the service is quick and easy to deploy and provides unlimited storage for a 
+predictable monthly fee.
+<br><br>
+Please contact your Symantec Account Representative for more information about this option. Note that you remain 
+contractually obligated for payment of your current Email Continuity.cloud and/or Email Archiving.cloud by Dell 
+as provided by your Symantec services agreement and the End of Availability/End of Service Announcement/Notice of Non-Renewal. 
+  </font></td>
+</tr>
+
+<!-- FAQ #11 -->
+<tr>
+  <td><font face="Arial" size="2"><b>Will Symantec offer data migration services?</b></font></td>
+  <td><font face="Arial" size="2">
+Data migration will not be required if you elect to contract directly with Dell to retain the Email Archiving.cloud by Dell. 
+Your services will continue without disruption. However, if you plan on migrating to Symantec Enterprise Vault.cloud, 
+or a third party archiving vendor, please contact Symantec Technical Support. Symantec has a process defined for 
+retrieving your data from Dell. The contact information for Technical Support is listed in this document.
+  </font></td>
+</tr>
+
+<!-- FAQ #12 -->
+<tr>
+  <td><font face="Arial" size="2"><b>Will there be any downtime with the migration?</b></font></td>
+  <td><font face="Arial" size="2">
+If you elect to contract directly with Dell to retain the Email Continuity.cloud and/or Email Archiving.cloud by Dell, 
+there is no expected downtime.
+  </font></td>
+</tr>
+
+</table>
+<!-- END: FAQ TABLE -->
+
+
+<table cellspacing="0" cellpadding="0" width="628" border="0">
+  <tr><td><font face="Arial" size="2">&nbsp;</font></td></tr>
+</table>
+
+
+<table cellspacing="0" cellpadding="0" width="628" border="0">
+  <tr><td><font face="Arial" size="2">Having trouble reading this email?</font></td><td align=right><a href='<%=nexstra.cds.servlet.TemplateTags.getTemplateURL( request , pageContext , tplname, (java.util.Properties)request.getAttribute("values") ) %>'><font face="Arial" size="2">Read the online version</a></font></td></tr>
+</table>
+
+
+<c:choose>
+<c:when test="${(empty values.temp_DE || values.temp_DE== '0') && (empty values.temp_FR || values.temp_FR== '0') && (empty values.temp_PT || values.temp_PT== '0') && (empty values.temp_CH || values.temp_CH== '0') && (empty values.temp_IT || values.temp_IT== '0') && (empty values.temp_CS || values.temp_CS== '0') && (empty values.temp_KO || values.temp_KO== '0') && (empty values.temp_ES || values.temp_ES== '0') }">
+</c:when>
+<c:otherwise>
+
+<br>
+<table cellspacing="0" cellpadding="0" width="628" border="0">
+<tr><td><font face="Arial" size="2">View this email in:</font></td><td></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" width="628" border="0">
+<tr><td><font face="Arial" size="2"><a href='<%=nexstra.cds.servlet.TemplateTags.getTemplateURL( request , pageContext , prefix+"IN", (java.util.Properties)request.getAttribute("values")  ) %>'>English</a><c:if test="${not empty values.temp_DE && values.temp_DE== '1'}">
+	| <a href='<%=nexstra.cds.servlet.TemplateTags.getTemplateURL( request , pageContext , prefix+"GR", (java.util.Properties)request.getAttribute("values") ) %>'>Deutsch</a></c:if><c:if test="${not empty values.temp_ES and values.temp_ES eq '1'}">
+	| <a href='<%=nexstra.cds.servlet.TemplateTags.getTemplateURL( request , pageContext , prefix+"SL", (java.util.Properties)request.getAttribute("values") ) %>'>Español</a></c:if><c:if test="${not empty values.temp_FR && values.temp_FR== '1'}">
+	| <a href='<%=nexstra.cds.servlet.TemplateTags.getTemplateURL( request , pageContext , prefix+"FR", (java.util.Properties)request.getAttribute("values") ) %>'>Français</a></c:if><c:if test="${not empty values.temp_IT && values.temp_IT== '1'}">
+	| <a href='<%=nexstra.cds.servlet.TemplateTags.getTemplateURL( request , pageContext , prefix+"IT", (java.util.Properties)request.getAttribute("values") ) %>'>Italiano</a></c:if><c:if test="${not empty values.temp_PT && values.temp_PT== '1'}">
+	| <a href='<%=nexstra.cds.servlet.TemplateTags.getTemplateURL( request , pageContext , prefix+"BR", (java.util.Properties)request.getAttribute("values") ) %>'>Português</a></c:if><c:if test="${not empty values.temp_CH && values.temp_CH== '1'}">
+	| <a href='<%=nexstra.cds.servlet.TemplateTags.getTemplateURL( request , pageContext , prefix+"CH", (java.util.Properties)request.getAttribute("values") ) %>'>繁體中文</a></c:if><c:if test="${not empty values.temp_CS && values.temp_CS== '1'}">
+	| <a href='<%=nexstra.cds.servlet.TemplateTags.getTemplateURL( request , pageContext , prefix+"CS", (java.util.Properties)request.getAttribute("values") ) %>'>简体中文</a></c:if><c:if test="${not empty values.temp_KO && values.temp_KO== '1'}">
+	| <a href='<%=nexstra.cds.servlet.TemplateTags.getTemplateURL( request , pageContext , prefix+"KN", (java.util.Properties)request.getAttribute("values") ) %>'>한국어</a></c:if></font></td></tr>
+</table>
+</c:otherwise>
+</c:choose>
+
+</body>
+<%=nexstra.cds.servlet.TemplateTags.getOpenEmailImage( request , pageContext ) %>
+</html>

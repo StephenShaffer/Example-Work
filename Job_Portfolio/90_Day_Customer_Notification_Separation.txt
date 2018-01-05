@@ -1,0 +1,498 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+      <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+      <title>Symantec</title>
+      <style type="text/css">
+/* client-specific Styles */
+
+#outlook a {
+	padding: 0;
+} /* Force Outlook to provide a view in browser button.
+         */
+body {
+	width: 100% !important;
+	margin: 0;
+}
+.ReadMsgBody {
+	width: 100%;
+}
+.ExternalClass {
+	width: 100%;
+} /* Force Hotmail to display emails at full width */
+body {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+}
+.yshortcuts, .yshortcuts a, .yshortcuts a:link, .yshortcuts a:visited, .yshortcuts a:hover, .yshortcuts a span {
+	text-decoration: none !important;
+	border-bottom: none !important;
+	background: none !important;
+}
+/* Reset Margins and Paddings */
+h1, h2, h3, p {
+	margin-top: 0 !important;
+	margin-right: 0 !important;
+	margin-bottom: 10px !important;
+	margin-left: 0 !important;
+}
+h4, h5, h6 {
+	margin: 0;
+}
+table, table td {
+	border-collapse: collapse;
+}
+table[align=left] {
+	border: none;
+	mso-table-lspace: 0;
+	mso-table-rspace: 0;
+}
+table[align=left] td {
+	border: none;
+}
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+}
+.img-inline {
+	display: inline;
+	border: 0;
+	vertical-align: -2px;
+	-moz-border-radius: 0 !important;
+	-webkit-border-radius: 0 !important;
+	border-radius: 0 !important;
+}
+.BGtable {
+	height: 100% !important;
+	margin: 0;
+	padding: 0;
+	width: 100% !important;
+}
+ @media only screen and (max-width: 480px) {
+img {
+	height: auto;
+}
+/*------Table Size------*/
+         /*no1-container*/
+body[yahoo] table.w640 {
+	width: 640px !important;
+}/*full*/
+body[yahoo] td.email-container, body[yahoo] table.w600 {
+	width: 540px !important;
+}/*full-20px*/
+body[yahoo] table.footer {
+	width: 520px !important;
+}/*full-40px-CON*/
+/*no2-TOTAL=Content(CON)*/
+body[yahoo] table.w380 {
+	width: 320px !important;
+}
+body[yahoo] table.w370 {
+	width: 370px !important;
+}
+body[yahoo] table.sidebar {
+	width: 220px !important;
+}
+body[yahoo] table.w194, body[yahoo] table.w194f {
+	width: 174px !important;
+}
+body[yahoo] table.w192, body[yahoo] table.w192f {
+	width: 172px !important;
+}/*3col*/
+body[yahoo] table.w388 {
+	width: 348px !important;
+}/*sidebar col*/
+body[yahoo] table.w145 {
+	width: 50% !important;
+}/*4col*/
+body[yahoo] table.w290, body[yahoo] table.w290f {
+	width: 50% !important;
+}/*2col*/
+/*no3-footer table*/
+body[yahoo] table.footer-left {
+	width: 65% !important;
+}
+body[yahoo] table.footer-right {
+	width: 35% !important;
+}
+/*-------img-size------*/
+         /*no1 show-img*/
+body[yahoo] img.wrap {
+	width: 560px !important;
+	height: 10px !important;
+}
+body[yahoo] img.img-166h {
+	max-width: 130px !important;
+}
+body[yahoo] img.img-640, body[yahoo] img.img-560, body[yahoo] img.img-350, body[yahoo] img.img-180,  body[yahoo] img.img-174, body[yahoo] img.img-270, body[yahoo] img.img-125 {
+	width: 100% !important;
+	max-width: 100% !important;
+}
+/*no2 devider*/
+body[yahoo] img.devider-img {
+	width: 540px !important;
+	height: 10px !important;
+}
+}
+ @media only screen and (max-width: 480px) {
+body[yahoo] #shadedCornerRow {
+	display: none;
+}
+body[yahoo] .blockCell {
+	display: block !important;
+	max-width: none !important;
+	width: 100% !important;
+}
+/*------Table Size------*/
+body[yahoo] #socialicontable {
+	display: none;
+}
+body[yahoo] .logoimg {
+	width: 120px !important;
+	margin-left: 5px !important;
+	margin-top: 5px !important;
+}
+body[yahoo] #topHeader {
+	padding-right: 5px !important;
+	padding-top: 5px !important;
+	vertical-align: middle !important;
+}
+body[yahoo] table.header-right {
+	width: 50% !important;
+}
+body[yahoo] table.header-left {
+	width: 50% !important;
+}
+/*container*/
+body[yahoo] table.w640 {
+	width: 400px !important;
+}/*full*/
+body[yahoo] td.email-container, body[yahoo] table.w600 {
+	width: 380px !important;
+}/*full-20px*/
+body[yahoo] table.footer {
+	width: 360px !important;
+}/*full-40px-CON*/
+/*small table*/
+body[yahoo] table.w380, body[yahoo] table.w370, body[yahoo] table.sidebar, body[yahoo] table.w192f, body[yahoo] table.w194f, body[yahoo] table.w388, body[yahoo] table.w290f {
+	width: 100% !important;
+}
+body[yahoo] table.w194, body[yahoo] table.w192, body[yahoo] table.w145, body[yahoo] table.w290 {
+	width: 50% !important;
+}
+/*footer table*/
+body[yahoo] table.footer-left, body[yahoo] table.footer-right {
+	width: 100% !important;
+}
+body[yahoo] table.footer-left td, body[yahoo] table.footer-right td {
+	text-align: center !important;
+}
+body[yahoo] table.footer-left td {
+	height: 60px !important
+}
+body[yahoo] table.footer-right td {
+	height: 40px !important
+}
+/*-------img-size------*/
+         /*show-img*/
+body[yahoo] img.wrap {
+	width: 400px !important;
+	height: 10px !important;
+}
+body[yahoo] img.img-166h {
+	width: 120px !important;
+}
+body[yahoo] img.img-social {
+	height: 30px !important;
+	max-height: 30px !important;
+	width: auto !important;
+}
+/*devider*/
+body[yahoo] img.devider-img {
+	width: 380px !important;
+	height: 10px !important;
+}
+/*------hide and display------*/
+body[yahoo] td.webonly, body[yahoo] span.webonly, body[yahoo] .webonly {
+	display: none !important;
+}
+body[yahoo] .sidebar-maincontent, body[yahoo] .sidebar-maincontent-right {
+	padding: 0 !important;
+}
+}
+ @media only screen and (max-width: 360px) {
+/*------Table Size------*/
+         /*container*/
+
+body[yahoo] table.w640, body[yahoo] td.w640 {
+	width: 320px !important;
+}/*full*/
+body[yahoo] td.email-container, body[yahoo] table.w600 {
+	width: 300px !important;
+}/*full-20px*/
+body[yahoo] table.footer {
+	width: 280px !important;
+}/*full-40px-CON*/
+/*small table*/
+body[yahoo] table.w194, body[yahoo] table.w192, body[yahoo] table.w145, body[yahoo] table.w290 {
+	width: 100% !important;
+}
+/*-------img-size------*/
+         /*show-img*/
+body[yahoo] img.wrap {
+	width: 320px !important;
+	height: 10px !important;
+}
+body[yahoo] img.img-166h {
+	width: 100px !important;
+}
+/*devider*/
+body[yahoo] img.devider-img {
+	width: 300px !important;
+	height: 10px !important;
+}
+}
+ @media only screen and (max-width: 320px) {
+/*------Table Size------*/
+         /*container*/
+body[yahoo] table.w640 {
+	width: 300px !important;
+}/*full*/
+body[yahoo] td.email-container, body[yahoo] table.w600 {
+	width: 280px !important;
+}/*full-20px*/
+body[yahoo] table.footer {
+	width: 260px !important;
+}/*full-40px-CON*/
+/*-------img-size------*/
+         /*show-img*/
+body[yahoo] img.wrap {
+	width: 300px !important;
+	height: 10px !important;
+}
+body[yahoo] img.img-166h {
+	width: 80px !important;
+}
+/*devider*/
+body[yahoo] img.devider-img {
+	width: 280px !important;
+	height: 10px !important;
+}
+}
+body[yahoo] .auto-style1 {
+	height: 32px;
+}
+</style>
+      </head>
+      <body yahoo="fix" style="-ms-text-size-adjust: 100%; font-size: 13px; font-weight: 400; margin: 0; -webkit-text-size-adjust: 100%; background-color: #ffffff; background-repeat: repeat; font-family: Tahoma,Arial,sans-serif; color: #333333; -webkit-font-smoothing: antialiased; width: 100% !important;" bgcolor="#ffffff" link="#f7941d" vlink="#d84704">
+<!--start BGtable-->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="BGtable" style="font-size: 13px; font-weight: 400; margin: 0; border-collapse: collapse; background-color: #ffffff; background-repeat: repeat;  font-family: Arial,sans-serif; color: #333333; height: 100% !important; width: 100% !important;" bgcolor="#ffffff">
+        <tr>
+    <td style="font-weight: 400; font-size: 13px; border-collapse: collapse; font-family: Arial,sans-serif; color: #333333;"><!--start email container-->
+            
+            <p style="font-size: 10px; color: #838481; font-family: Arial, Helvetica, sans-serif" align="center">Important Update for Customers&nbsp;&nbsp;|&nbsp;&nbsp; <a href="#" style="color: #f7941d;">View email online</a></p>
+            <table width="640" border="0" align="center" cellpadding="0" cellspacing="0" class="w640" style="border-collapse: collapse;">
+        <tr>
+                <td style="font-weight: 400; font-size: 13px; border-collapse: collapse; font-family: Arial,sans-serif; color: #333333;"><table width="640" align="left" border="0" cellspacing="0" cellpadding="0" class="w640" style="border-collapse: collapse;">
+                    <tr> 
+                    <!--start email content-->
+                    <td width="100%" valign="top" class="email-container" style="font-size: 13px; font-weight: 400; border-collapse: collapse; background-color: #ebebeb; font-family: Arial,sans-serif; line-height: 12px; color: #333333; padding-top:20px;"" bgcolor="#ebebeb">
+                        
+                        <!--start top-bar-->
+                        
+                        <center>
+                        <table width="600" border="0" cellpadding="0" cellspacing="0" class="w640" style="border-collapse: collapse; background-color: #ffffff;" bgcolor="#ffffff">
+                            <tr>
+                            <td height="20" class="last-module" style="font-weight: 400; font-size: 13px; border-collapse: collapse; line-height: 18px; font-family: Arial,sans-serif; color: #333333; "><table width="100%" border="0" cellpadding="0" cellspacing="0" class="footer" style="border-collapse: collapse; line-height: 18px;">
+                                <tr>
+                                <td align="left" valign="middle" class="general-td" style="font-weight: 400; font-size: 11px; -webkit-text-size-adjust: none; border-collapse: collapse; line-height: 16px; font-family: Arial,sans-serif; color: #444;"><table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" class="header-left" style="border-collapse: collapse; border: none; mso-table-rspace: 0pt; mso-table-lspace: 0pt;">
+                                    <!--*align table width 300px-1px to match outlook*-->
+                                    <tr>
+                                    <td height="40" align="left" valign="middle"  id="Td1" class="h6 mktEditable" style="font-size: 11px; font-weight: normal !important; border: none; -webkit-text-size-adjust: none; text-transform: uppercase; border-collapse: collapse; line-height: 16px; font-family: Arial,sans-serif; color: #d3d3d3 !important; text-align: left; padding-top:5px; padding-bottom:5px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="logoimg" style="" src="http://www4.symantec.com/mktginfo/img_temp/symantec-veritas-logo-dia.png" border="0" vspace="2" alt="Symantec" /></td>
+                                  </tr>
+                                  </table></td>
+                              </tr>
+                              </table></td>
+                          </tr>
+                          </table>
+                      </center>
+                        
+                        <!--end top-bar--> 
+                        
+                        <!--srart header img-->
+                        
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+                        <tr>
+                            <td width="100%" style="border-collapse: collapse; text-align: center;" align="center" bgcolor="#ebebeb"><center>
+                                <table width="600" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;" class="w640">
+                                <tr>
+                                    <td style="border-collapse: collapse; background-color: #ffffff; border-bottom: 2px solid #dedbdb; line-height:6px;" bgcolor="#ffffff"><img src="http://www4.symantec.com/mktginfo/img_temp/spacer.gif" alt="" width="4" height="5" hspace="0" vspace="0" border="0" /></td>
+                                  </tr>
+                              </table>
+                              </center></td>
+                          </tr>
+                      </table>
+                        
+                        <!--end header img-->
+                        
+                        <div style="line-height: 17px;"><br />
+                      </div>
+                        
+                        <!--start sidebar area2-->
+                        
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
+                        <tr>
+                            <td class="mktEditable general-td" style="font-weight: 400; font-size: 13px; border-collapse: collapse; line-height: 18px; font-family: Arial,sans-serif; color: #333333; padding-top: 2px; "><table width="600" class="w640" align="center">
+                              <tr>
+                                <td align="left" height="40" style="padding-left: 25px; padding-right: 25px; padding-top:25px; padding-bottom:25px;  border-collapse: collapse;  font-family: Arial,sans-serif; color: #333333;  border-top-left-radius: 6px; border-top-right-radius: 6px; color:#fdbb30" bgcolor="#000000"><table width="100%">
+                                    <tr>
+                                    <td align="left" valign="bottom" bgcolor="#000000" style="text-align:left; border: none; border-collapse: collapse; line-height: 18px; font-family: Arial,sans-serif; color: #ffffff; background-color: #000000; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; padding-bottom:10px; padding-right:10px;"><div style="font-size: 14px; line-height: 22px; color: #ffffff;">Important Update for Customers</div>
+                                    <div style="font-size: 20px; line-height: 24px; color:#ffffff;">90 Day Customer Separation Transition Notification </div>
+                                        </td>
+                                    <td align="right">&nbsp;</td>
+                                  </tr>
+                                  </table></td>
+                              </tr>
+                                <tr>
+                                <td align="left" style="font-weight: 400; font-size: 14px; padding-left: 25px; padding-right: 25px; padding-top:25px;  border-collapse: collapse;  font-family: Arial,sans-serif; color: #333333;  border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; color:#333333" bgcolor="#ffffff"><p align="right">&nbsp;</p>
+
+<p>Dear Valued Customer,</p>
+
+<p><b>Why are we writing you?</b></p>
+
+<p>We're planning important changes at Symantec, and are writing to keep you updated. Our top priority is assuring business continuity with you, our customers, and our partners. Please read on, to understand how changes may have an impact on how we interact.</p>
+
+<p><b>What's happening?</b></p>
+
+<p>On October 9, 2014, Symantec Corporation announced plans to separate into two independent businesses - one focused on Information Security, and the other focused on Information Management. We plan to separate the operations of these two businesses in October 2015, which includes the launch of a set of new "Veritas" subsidiaries.</p>
+
+<p>By the end of calendar 2015, we expect to legally separate Symantec and Veritas. For more details about our Separation, please review our <a href="http://www.symantec.com/about/news/release/article.jsp?prid=20141009_01">Separation announcement</a>. Additional information is available at <a href="http://www.symantec.com/about/news/release.">http://www.symantec.com/about/news/release.</a></p>
+
+<p><b>What can you expect?</b></p>
+
+<p>We're excited about working with you and our partners through the transition, and will share important information on our progress. In addition, we've created our <a href="C:\Users\jameyers\Desktop\go.symantec.com\separationtransition">Transition Microsite</a>, a brand new resource for you to access up to the minute information. Please visit it for the latest updates.</p>
+
+<p>As a Symantec Information Security products customer, our Separation will not change how you order, renew, or get support for Symantec Information Security products – for these solutions, please continue to interact with your channel partner and Symantec as you always have.</p>
+
+<p>For Veritas Information Management products, some of our upcoming areas of change may need supporting adjustments to your records and process in order to align with the Veritas businesses once operationally separated (scheduled for October 2015). We are committed to making this transition as seamless as possible for you, with minimal disruption.  Additionally, since the majority of our customers engage Symantec through our partners, we encourage you to continue to do so when engaging Veritas.</p>
+
+<p>Here is an overview of some key areas to plan for - we'll provide more detailed information closer to that time.</p>
+
+      <ul>
+        <li><a href="#buying">Buying Program Changes</a></li>
+        <li><a href="#ordering">Ordering Changes</a></li>
+        <li><a href="#contract">Contract Transition</a></li>
+        <li><a href="#additional">Additional Transition Support Information</a></li>
+      </ul>
+
+<p><a name="buying" /></a><b>Buying Program Changes for Veritas</b></p>
+
+<p>To simplify customers' buying experience, Veritas will offer three primary customer Buying Programs for all products and services based on three segments: Corporate, Academic and Government. Customers will make purchases from the pricelist that applies to their business profile.</p>
+
+<p>More information on the details and roll out of Veritas Buying Programs will be available in the coming months.</p>
+
+<p><a name="purchasing" id="ordering" /></a><b>Ordering Changes</b></p>
+
+<p>As part of operational separation, Veritas will have new separate ordering systems and processes. When ordering from Veritas, you can expect changes to the SKU structure and Buying Programs for Information Management, as well as changes to ordering and fulfillment processes. The Veritas invoice format and billing process will be enhanced, and we're looking forward to offering customers new Product Licensing and Licensing Portal functionality. Direct-ordering customers can expect additional communications and training in the coming months (timelines below are approximate):</p>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size: 10px; font-family: Arial,sans-serif;">
+  <tr>
+    <td width="22%" valign="middle">Early August</td>
+    <td width="78%"  valign="top"><ul>
+      <li>Details on Order to Cash policies and processes:<br />
+        <ul>
+          <li>Ordering and Sales Support contact details<br /></li>
+          <li>Renewals Policies and Process details<br /></li>
+        </ul>
+      </li>
+      <li>Mapping of Symantec-to- Veritas entity for purposes of post-Separation ordering<br /></li>
+      <li>Veritas Vendor Setup Form - without Banking & Remittance Details (we will supply you with our Vendor Setup Form pre-populated with the necessary details to enable you to establish Veritas as a vendor in your systems)</li>
+     </ul></td>
+  </tr>
+  <tr>
+    <td  valign="middle">Early September</td>
+    <td  valign="top"><ul>
+      <li>Veritas Invoice Format Sample <br /></li>
+      <li>Veritas Vendor Setup Form - with Banking &amp; Remittance Details<br /></li>
+      <li>Veritas Credit Card Merchant I.D. Confirmation<br /></li>
+      <li>Veritas Purchasing Email addresses<br /></li>
+      <li>Veritas Order Requirements<br /></li>
+      <li>Online learning aides</li></ul>
+    </td>
+  </tr>
+  <tr>
+    <td  valign="top">Early October 2015</td>
+    <td  valign="top"><ul>
+      <li>Final reminder about new process <br /></li>
+      <li>Banking & Remittance Detail Reminders<br /></li>
+    </ul></td>
+  </tr>
+</table>
+
+<p>&nbsp;</p>
+
+<p><a name="contract" /></a><b>Contract Transition</b></p>
+
+<p>Some customers conduct business under signed contracts with Symantec. For these, our general approach will be to enable these customers to leverage their existing contracts to carry on Information Management business with Veritas after operational Separation. This will be accomplished either by assigning the contract to Veritas, or virtually duplicating it for use with Veritas. In some cases, Symantec will continue to manage the billing and fulfillment of multi-year contracts involving Information Management solutions. Customers will separately receive additional information on the proposed transition of contracts.  <br /></p>
+
+<p><a name="additional" /><b>Additional Transition Support Information</b></p>
+
+<p>Please share this information with the appropriate people in your organization. If you have any questions, please refer to our <a href="C:\Users\jameyers\Desktop\go.symantec.com\separationtransition">Transition Microsite</a>, your partner, your Account Rep or <a href="https://support.symantec.com/en_US/contact-us.html">Symantec Business Support</a> at 1 (800) 721 3934.</p>
+
+<p>We are looking forward to continuing our relationship with both you and our partners, and working closely together through these changes to assure a smooth transition. </p>
+
+<p>For additional information on the separation, please reference our <a href="#">Transition Microsite.</a><br /></p>
+
+<p>Please share this information with the appropriate individuals within your organization as needed.</p>
+
+<p>Sincerely,<br />
+The VERITAS Separation Team</p>
+
+                                <div></div><br />
+                                  </td>
+                              </tr>
+                              </table>
+                            &nbsp;<br /></td>
+                          </tr>
+                      </table>
+                        
+                        <!--start footer inside-->
+                        
+                        <table id="socialicontable" width="100%" border="0" cellpadding="0" cellspacing="0" class="" style="border-collapse: collapse; background-color: #f6f6f6;color:#999999;" bgcolor="#f6f6f6">
+                        <tr>
+                            <td width="100%" align="right" style="border-top: 1px solid #ffffff; text-align:right; font-family: Arial, sans-serif; font-weight: bold; color: #999999; font-size: 13px; padding: 10px;"> FOLLOW US &nbsp; <a target="_blank" href="http://www.symantec.com/rss/"><img style="display:inline;height:16px;width:16px;" hspace="1" src="http://www4.symantec.com/mktginfo/img_temp/rss-on-16.png" alt="RSS" border="0" /></a> <img src="http://www4.symantec.com/mktginfo/img_temp/spacer.gif" alt="" width="4" height="16" hspace="0" vspace="0" border="0" /> <a target="_blank" href="https://www.facebook.com/Symantec"><img style="display:inline;height:16px;width:16px;" hspace="1" src="http://www4.symantec.com/mktginfo/img_temp/facebook-16.png" alt="Facebook" border="0" /></a> <img src="http://www4.symantec.com/mktginfo/img_temp/spacer.gif" alt="" width="4" height="16" hspace="0" vspace="0" border="0" /> <a target="_blank" href="https://twitter.com/symantec"><img style="display:inline;height:16px;width:16px;" hspace="1" src="http://www4.symantec.com/mktginfo/img_temp/twitter-on-16.png" alt="Twitter" border="0" /></a> <img src="http://www4.symantec.com/mktginfo/img_temp/spacer.gif" alt="" width="4" height="16" hspace="0" vspace="0" border="0" /> <a target="_blank" href="https://plus.google.com/+symantec/posts"><img style="display:inline;height:16px;width:16px;" hspace="1" src="http://www4.symantec.com/mktginfo/img_temp/google-plus-16.png" alt="Google+" border="0" /></a></td>
+                          </tr>
+                      </table>
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0" class="dark-module" style="border-collapse: collapse; background-color: #f6f6f6;color:#aba9a8;" bgcolor="#ffffff">
+                        <tr>
+                            <td height="20" class="last-module" style="font-weight: 400; font-size: 13px; border-collapse: collapse; line-height: 18px; font-family: Arial,sans-serif; color: #aba9a8; padding: 10px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="footer" style="border-collapse: collapse; line-height: 18px;background-color: #f6f6f6;">
+                                <tr>
+                                <td align="left" valign="middle" class="general-td" style="font-weight: 400; font-size: 11px; -webkit-text-size-adjust: none; border-collapse: collapse; line-height: 16px; font-family: Arial,sans-serif; color: #444; padding: 0px 5px 0;background-color: #f6f6f6;color:#afb2b2;"><table width="568" border="0" align="left" cellpadding="0" cellspacing="0" class="footer-left" style="border-collapse: collapse; border: none; mso-table-rspace: 0pt; mso-table-lspace: 0pt;background-color: #f6f6f6;color:#afb2b2;">
+                                    <!--*align table width 300px-1px to match outlook*-->
+                                    <tr>
+                                    <td height="60" align="left" valign="middle"  id="content15" class="h6 mktEditable" style="font-size: 10px; font-weight: normal !important; border: none; -webkit-text-size-adjust: none;border-collapse: collapse; line-height: 16px; font-family: Arial,sans-serif; 
+                                                            color: #afb2b2 !important; text-align: left;border-right:0px;">&copy; 2015 Symantec Corporation. All rights reserved. Symantec, the Symantec Logo, and the Checkmark Logo are trademarks or registered trademarks of Symantec Corporation or its affiliates in the U.S. and other countries. Other names may be trademarks of their respective owners. <br />
+                                        <br />
+                                        Symantec Corporation, 350 Ellis Street, Mountain View, CA 94043, United States </td>
+                                  </tr>
+                                  </table></td>
+                              </tr>
+                              </table></td>
+                          </tr>
+                      </table>
+                        
+                        <!--end footer inside--></td>
+                    <!--end email content--> 
+                  </tr>
+                  </table></td>
+              </tr>
+      </table>
+            
+            <!--end email container--></td>
+  </tr>
+      </table>
+<!--end BGtable-->
+</body>
+</html>
